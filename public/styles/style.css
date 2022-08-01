@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+
+body {
+    background: #333;
+    height: 100vh;
+}
+
+main {
+    /* background: linear-gradient(-90 #333, white); */
+    background: #3d3d3c;
+}
+.card text-center{
+    background: #525251;
+}
+
+/* ########  ACCUEIL ######## */
+
+.boutonMenu {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+h1 {
+    font-size: 60px;
+    color: rgb(209, 195, 4);
+    text-align: center;
+}
+
+.aindex {
+    font-family: 'Montserrat';
+    color:  #F2A71C;
+    text-decoration: none;
+    text-align: center;
+}
+
+.creer {
+    background-color:#1d1d1c;
+    border-radius: 10px;
+    border: 2px solid  #F2A71C;
+    padding: 5px 10px 5px 10px;
+    margin: 10px;
+    /* color: #333; */
+    /* position: absolute; */
+    width: 429px;
+    height: 48px;
+    /* left: 756px;
+    top: 40px; */
+}
+
+.c-body {
+    color: #F2A71C;
+}
+
+.galerie {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    width: 80%;
+    margin: 70px auto 0;
+    background: rgb(20, 20, 20);
+    border-style: solid #F2A71C;
+    /* border-width: 2rem; */
+    border-radius: 10px;
+}
+
+.cardimg {
+    height: 50px;
+    width: 50px;
+}
+
+.item {
+    /* width: 500px;
+    height: 400px; */
+
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    overflow: hidden;
+    /* on utilise flex-shrink pour pas que l'image rétrécisse  */
+    flex-shrink: 0;
+
+
+
+    /* pour mettre une ombre a l'intérieur d'une image png */
+    /* filter: drop-shadow(0 0 5px blue); */
+}
+
+.item img {
+    width: 60%;
+    height: auto;
+
+}
+
+/* ########  FORMULAIRE ######## */
+
+/* ------ Formulaire avec image ######    OK   --------- */
+
+.paragraphe{
+    font-family: 'Montserrat, sans-serif';
+}
+.rappel {
+    border-radius: 10px;
+    margin-left: 40%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    width: auto;
+    padding: 54px;
+    background-color: #F2A71C;
+}
+
+/* #boutonFermeture{
+    color: #F2A71C;
+    background-color: transparent;
+    border-color: 3px solid ;
+    border: #F2A71C;
+    padding: 10px;
+} */
+#id01 {
+    background-color: rgba(51, 51, 51, 0.342);
+}
+
+section {
+    padding: 10px;
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: auto;
+}
+
+section .imgBox {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(transparent, #F2A71C), url(antique.jpg), no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+section .contentBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+
+}
+
+.closure {
+    color: #F2A71C;
+    width: 46px;
+    height: 51px;
+    border-color: 2px solid;
+    background-color: rgb(46, 46, 45);
+
+}
+
+section .contentBox .formBox h2 {
+    color: #F2A71C;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #F2A71C;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.inputBx {
+    margin-bottom: 20px;
+
+}
+
+.inputBx span {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #F2A71C;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+}
+
+.inputBx input {
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: 400;
+    border: 2px solid #F2A71C;
+    letter-spacing: 1px;
+    outline: none;
+    background-color: transparent;
+    border-radius: 10px;
+
+}
+
+.inputBx input[type="submit"] {
+    background-color: #F2A71C;
+    color: aliceblue;
+    outline: none;
+    border: 0;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.inputBx input[type="submit"]:hover {
+    background-color: darkolivegreen;
+    /* color: white;
+outline: 0;
+border: 0; */
+
+
+}
+
+.remember {
+    margin-bottom: 10px;
+    color: #F2A71C;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.inputBx input p {
+    color: #F2A71C;
+    text-align: center;
+}
+
+.inputBx p a {
+    color: #F2A71C;
+
+}
+
+/* partie responsive formulaire -------*/
+@media(max-width:760px) {
+    section .imgBox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    section .contentBox {
+        width: 100%;
+        z-index: 1;
+
+    }
+
+    section .contentBox .formBox {
+        width: 100%;
+        background-color: brown;
+        padding: 40px;
+        border-radius: 10px;
+
+    }
+
+}
+
+/* ############## DASHBOARD  ################"" */
+/* ########### sidebar ######## */
+.body {
+    /* background: url("https://images.unsplash.com/photo-1518893883800-45cd0954574b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=434&q=80") no-repeat; */
+    background: url(/image/smallpath.jpg) no-repeat;
+    position: relative;
+    height: 100vh;
+    background-position: right;
+    background-size: contain;
+    margin-right: 100px;
+    transition: all .5s;
+}
+.offcanvas-body {
+    background:  #171717;
+}
+.offcanvas-header{
+    background:  #171717;
+}
+.citation {
+    font-size: 2rem;
+    color: #F2A71C;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+.phrase {
+
+    font-size: clamp(1.5rem, 3vw, 4.5rem);
+}
+
+.auteur {
+    margin-right: 30px;
+    font-size: clamp(1.5rem, 3vw, 4.5rem);
+}
+
+.sideParent {
+    background-color: #333;
+}
+
+#btnprim {
+    width: 25px;
+    height: 20px;
+    color: #F2A71C;
+    ;
+    background-color:  #171717;
+    border-color: #F2A71C;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.fermeture {
+    width: 25px;
+    height: 20px;
+    color: #F2A71C;
+    ;
+    background-color: #0d6efd05;
+    border-color: #F2A71C;
+    margin-left: 70px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.liSidebar {
+    /* display: block; */
+    height: 60px;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #F2A71C;
+    /* border-top: 1px solid black; */
+    transition: .4s;
+}
