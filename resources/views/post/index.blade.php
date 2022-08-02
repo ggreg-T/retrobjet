@@ -38,13 +38,14 @@
         {{ Str::limit($post->description, 50)}}
       </p>
       <p class="c-text">
-        mettre le user
+      Par {{ $post->user->name }} le {{ $post->created_at->format('d N Y')}}
       </p>
       <p class="c-text">
         {{ $post->created_at->format('d N Y')}}
       </p>
       <a href="{{ route('posts.show', $post)}}" class="btn btn-primary">Voir</a>
     </div>
+    
     <a href="{{ route('deletPost', $post->id)}}">
       Supprimmer
     </a>

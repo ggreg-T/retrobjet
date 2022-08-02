@@ -32,3 +32,4 @@
             <x-button style="display: block !important" class="mt-10">Modifier mon post</x-button>
         </form>
     </div>
+    @endsection

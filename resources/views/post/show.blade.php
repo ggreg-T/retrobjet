@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @section('content')
 <!-- test image  -->
+
+
 <img src="{{ URL::asset('/image/antique.jpg') }}">
 <img src="{{ Storage::url($post->image)}}" class="cardimg" alt="...">
 
@@ -25,6 +27,7 @@
 
     <!-- supprimer  -->
     <div class="inputBx">
-        <a href="{{ route('posts.destroy', $post)}}"><input type="submit" value="Supprimer"></a>
+        <a href="{{ route('posts.destroy', $post) }}"><input type="submit" value="Supprimer"></a>
     </div>
 </div>
+@endsection

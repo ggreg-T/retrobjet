@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.app')
 @section('content')
 
 <h1><strong> Formulaire 2</strong></h1>
@@ -14,14 +14,18 @@
 <!-- bouton d'appel formulaire -->
 <button class="rappel" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
     <p class="paragraphe">Nous avons oublié plein de choses,
-    <br>
-    mais peut être que "VOUS" pouvez nous le rappeler!
-    <br>
-    Dites le nous en cliquant ici!</p>
+        <br>
+        mais peut être que "VOUS" pouvez nous le rappeler!
+        <br>
+        Dites le nous en cliquant ici!
+    </p>
 </button>
 
 <div id="id01" class="modal">
-    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">
+        <!-- ×  -->
+        <button class="boutonFermer" >Fermer</button>
+    </span>
 
     <section>
         <div class="imgBox">
