@@ -7,11 +7,13 @@ use App\Models\Post;
 use App\Models\User;
 use App\Models\Category;
 use Illuminate\Http\Request;
-
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Gate;
-use App\Http\Requests\StorePostRequest;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\DB;
+use App\Http\Requests\StorePostRequest;
+use App\Actions\PostUpdateAction;
+use Illuminate\Support\Facades\Auth;
+
+use Illuminate\Support\Facades\Gate;
 use App\Http\Requests\UpdatePostRequest;
 
 class PostController extends Controller
@@ -79,16 +81,29 @@ class PostController extends Controller
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
+    // ##### 1ERE MÉTHODE EDIT" #######
     public function edit(Post $post)
     {
-        if (Gate::denies('update-post', $post)) {
-            abort(403);
-        }
-
         $categories = Category::all();
 
-        return view('post.edit', compact('post', 'categories'));
+        return view('post.edit', [
+            'categories' => $categories, 
+            'post' => $post
+        ]);
     }
+
+    //   ######### 2e MÉTHODE EDIT ###################
+
+    // public function edit(Post $post)
+    // {
+    //     if (Gate::denies('update-post', $post)) {
+    //         abort(403);
+    //     }
+
+    //     $categories = Category::all();
+
+    //     return view('post.edit', compact('post', 'categories'));
+    // }
 
     /**
      * Update the specified resource in storage.
