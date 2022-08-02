@@ -13,7 +13,8 @@ main {
     /* background: linear-gradient(-90 #333, white); */
     background: #3d3d3c;
 }
-.card text-center{
+
+.card text-center {
     background: #525251;
 }
 
@@ -33,15 +34,15 @@ h1 {
 
 .aindex {
     font-family: 'Montserrat';
-    color:  #F2A71C;
+    color: #F2A71C;
     text-decoration: none;
     text-align: center;
 }
 
 .creer {
-    background-color:#1d1d1c;
+    background-color: #1d1d1c;
     border-radius: 10px;
-    border: 2px solid  #F2A71C;
+    border: 2px solid #F2A71C;
     padding: 5px 10px 5px 10px;
     margin: 10px;
     /* color: #333; */
@@ -60,6 +61,8 @@ h1 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    border: 2px solid #F2A71C;
+
     max-width: 1500px;
     width: 80%;
     margin: 70px auto 0;
@@ -77,16 +80,15 @@ h1 {
 .item {
     /* width: 500px;
     height: 400px; */
-
+    background: #525251;
+    border: 2px solid #F2A71C;
+    border-radius: 10px;
     width: 300px;
     height: 300px;
     margin: 10px;
     overflow: hidden;
     /* on utilise flex-shrink pour pas que l'image rétrécisse  */
     flex-shrink: 0;
-
-
-
     /* pour mettre une ombre a l'intérieur d'une image png */
     /* filter: drop-shadow(0 0 5px blue); */
 }
@@ -101,9 +103,10 @@ h1 {
 
 /* ------ Formulaire avec image ######    OK   --------- */
 
-.paragraphe{
+.paragraphe {
     font-family: 'Montserrat, sans-serif';
 }
+
 .rappel {
     border-radius: 10px;
     margin-left: 40%;
@@ -277,13 +280,24 @@ border: 0; */
     margin-right: 100px;
     transition: all .5s;
 }
+
 .offcanvas-body {
-    background:  #171717;
+    background: #171717;
+    color: #F2A71C;
+    font-family: 'Montserrat, sans-serif';
 }
-.offcanvas-header{
-    background:  #171717;
+
+.offcanvas-header {
+    color: #F2A71C;
+    background: #171717;
+    font-family: 'Roboto, sans-serif';
 }
+
 .citation {
+    display: flex;
+    flex-wrap: wrap;
+    border-style: groove;
+    border-color: #F2A71C;
     font-size: 2rem;
     color: #F2A71C;
     position: absolute;
@@ -292,12 +306,14 @@ border: 0; */
 }
 
 .phrase {
+    font-family: 'Montserrat, sans-serif';
 
     font-size: clamp(1.5rem, 3vw, 4.5rem);
 }
 
 .auteur {
-    margin-right: 30px;
+    font-weight: 4px;
+    margin-left: 300px;
     font-size: clamp(1.5rem, 3vw, 4.5rem);
 }
 
@@ -310,8 +326,8 @@ border: 0; */
     height: 20px;
     color: #F2A71C;
     ;
-    background-color:  #171717;
-    border-color: #F2A71C;
+    background-color: #171717;
+    border: 3px solid #F2A71C;
     margin-left: 70px;
     margin-top: 20px;
 }
@@ -322,7 +338,7 @@ border: 0; */
     color: #F2A71C;
     ;
     background-color: #0d6efd05;
-    border-color: #F2A71C;
+    border: 3px solid #F2A71C;
     margin-left: 70px;
     margin-top: 20px;
     border-radius: 5px;
@@ -340,4 +356,8 @@ border: 0; */
     border-bottom: 1px solid #F2A71C;
     /* border-top: 1px solid black; */
     transition: .4s;
+}
+
+hr {
+    margin: 250px;
 }

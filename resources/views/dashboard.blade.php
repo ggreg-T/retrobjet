@@ -46,8 +46,8 @@
 <div class="body">
     <div class="citation">
         <p class="phrase"> NOS RICHESSES, CE SONT NOS SOUVENIRS.</p>
-        <hr style="width:50%">
-        <p class="auteur"> François HERTEL
+        <hr style="width:35%">
+        <p class="auteur">      François HERTEL
         </p>
     </div>
 </div>

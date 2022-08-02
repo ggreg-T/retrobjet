@@ -22,4 +22,9 @@
     <div class="creer">
         <a href="{{ route('posts.edit', $post) }}" class="editer">Edit</a>
     </div>
+
+    <!-- supprimer  -->
+    <div class="inputBx">
+        <a href="{{ route('posts.destroy', $post)}}"><input type="submit" value="Supprimer"></a>
+    </div>
 </div>

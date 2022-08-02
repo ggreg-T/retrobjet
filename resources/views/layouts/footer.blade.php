@@ -3,9 +3,13 @@
     Featured
   </div>
   <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">
+      Projet: Objet d'une époque
+    </h5>
+    <p class="card-text">
+Simplon/session 2021-2022
+    </p>
+    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
   <div class="card-footer text-muted">
     Au revoir

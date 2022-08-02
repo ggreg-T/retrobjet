@@ -30,7 +30,7 @@
   @endif
   <div class="item">
 
-    <a href="{{ route('posts.show', $post)}}"><img src="{{ asset('storage/' . $post->image)}}" class="cardimg" alt="..."></a>
+    <a href="{{ route('posts.show', $post)}}"><img src="{{ Storage::url($post->image)}}" class="cardimg" alt="..."></a>
 
     <div class="c-body">
       <h5 class="c-title">{{ $post->nom_objet}}</h5>
